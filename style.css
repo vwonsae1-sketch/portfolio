@@ -324,7 +324,7 @@ section{
     justify-content: center;
     align-items: center;
     background-color: var(--main-color);
-    height: auto;
+    height: 550px;
     border-radius: 3.5rem;
     cursor: pointer;
     border: 5px solid transparent;
