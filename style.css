@@ -15,7 +15,7 @@
     --third-main-color: #830073;
 }
 html{
-    font-size: 48%;
+    font-size: 44%;
     overflow-x: hidden;
 }
 
@@ -324,7 +324,7 @@ section{
     justify-content: center;
     align-items: center;
     background-color: var(--main-color);
-    height: 550px;
+    height: auto;
     border-radius: 3.5rem;
     cursor: pointer;
     border: 5px solid transparent;
