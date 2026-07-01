@@ -214,5 +214,28 @@
     </footer>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script src="script.js"></script>
+        <script>
+        const roles = [
+            "Video Editor",
+            "Motion Designer",
+            "Colourist",
+            "Freelancer"
+        ];
+        let current = 0;const role = document.getElementById("role");
+        setInterval(() => {
+            role.style.transition = "all 0.4s ease";
+            role.style.opacity = "0";
+            role.style.transform = "translateY(-20px)";
+            setTimeout(() => {
+                current = (current + 1) % roles.length;
+                role.textContent = roles[current];
+                role.style.transform = "translateY(20px)";
+                setTimeout(() => {
+                    role.style.opacity = "1";
+                    role.style.transform = "translateY(0)";
+                }, 50);
+            }, 400);
+        }, 2500);
+    </script>
 </body>
 </html>   
